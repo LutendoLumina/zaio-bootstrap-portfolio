@@ -1,180 +1,351 @@
 <!doctype html>
 <html lang="en" class="h-100" data-bs-theme="auto">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
-    />
-    <meta name="generator" content="Astro v5.13.2" />
-    <title>Portfolio</title>
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/cover/"
-    />
-    <script src="../assets/js/color-modes.js"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <meta name="theme-color" content="#712cf9" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Bootstrap icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+  <meta name="generator" content="Astro v5.13.2" />
+  <title>Portfolio</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="style.css" rel="stylesheet" />
 </head>
 
-<body class="bg-light">
+<body>
 
-    <div class="banner-wrap vh-100 vw-100 text-white">
-      <div class="overlay"></div>
-      <header class="px-5 p-3 text-white">
-        <div>
-          <h3 class="float-md-start text-center">Portfolio</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a
-              class="nav-link fw-bold py-1 px-0 active"
-              aria-current="page"
-              href="#"
-              >Home</a
-            >
-            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
+  <!-- HERO SECTION -->
+  <div class="banner-wrap vh-100 vw-100 text-white">
 
-      <main class="d-flex flex-column align-items-center justify-content-center h-100 text">
-        <h1 class="display-1">I am Lutendo Matshidze</h1>
-        <p class="lead">
-          Software Engineer | AI Engineer
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-light fw-bold border-white bg-white"
-            >Learn more</a
-          >
-        </p>
-      </main>
+    <div class="overlay"></div>
 
-    </div>
+    <header class="px-5 p-3 text-white hero-header fixed-top">
+      <div>
+        <h3 class="float-md-start text-center">Portfolio</h3>
 
-    <section>
-      <div class="container p-5">
-        <div class="card">
-          <div class="card-body">
-            <div class="row p-3">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="assets/profile.jpeg" class="img-fluid" alt="profile pic">
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#about-us">About Me</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
+          <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="hero-content d-flex flex-column align-items-center justify-content-center text-center h-100 text">
+      <h1 class="display-1 fw-normal">I am Lutendo Matshidze</h1>
+      <p class="lead mb-4">
+        FullStack AI Engineer
+      </p>
+    </main>
+
+  </div>
+
+  <!-- ABOUT ME SECTION -->
+  <section id="about-us" class="about-section py-5">
+    <div class="container">
+      <div class="card about-card border-0">
+        <div class="card-body p-4 p-lg-5">
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+              <div class="row g-4 align-items-start">
+                <div class="col-sm-5">
+                  <img src="assets/profile.jpeg" class="img-fluid rounded-4 shadow-sm profile-img"
+                    alt="Portrait of Lutendo Matshidze">
+                </div>
+
+                <div class="col-sm-7">
+                  <div class="contact-details">
+                    <p><strong>Name:</strong> Lutendo Matshidze</p>
+                    <p><strong>Profile:</strong> Software & AI Engineer</p>
+                    <p><strong>Email:</strong> lupreshie@gmail.com</p>
                   </div>
-                  <div class="col-md-6 mt-3">
-                    <p><strong>Name:</strong>Lutendo Matshidze</p>
-                    <p><strong>Profile:</strong>Software AI Engineer</p>
-                    <p><strong>Email:</strong>Lupreshie@gmail.com</p>
-                    <p><strong>Skills:</strong>
-                      <span class="badge rounded-pill bg-dark">HTML</span>
-                      <span class="badge rounded-pill bg-dark">CSS</span>
-                      <span class="badge rounded-pill bg-dark">git</span>
-                      <span class="badge rounded-pill bg-dark">javascript</span>
-                      <span class="badge rounded-pill bg-dark">firebase</span>
-                      <span class="badge rounded-pill bg-dark">OOP</span>
-                      <span class="badge rounded-pill bg-dark">Reactjs</span>
-                      <span class="badge rounded-pill bg-dark">Redux</span>
-                      <span class="badge rounded-pill bg-dark">Nodejs</span>
-                      <span class="badge rounded-pill bg-dark">MongoDB</span>
-                      <span class="badge rounded-pill bg-dark">Express</span>
-                    </p>
+
+                  <div class="skills-block mt-4">
+                    <h6 class="skills-title mb-3">Skills</h6>
+
+                    <div class="skills-badges">
+                      <span class="badge rounded-pill text-bg-dark">HTML</span>
+                      <span class="badge rounded-pill text-bg-dark">CSS</span>
+                      <span class="badge rounded-pill text-bg-dark">Bootstrap</span>
+                      <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+                      <span class="badge rounded-pill text-bg-dark">Git</span>
+                      <span class="badge rounded-pill text-bg-dark">Firebase</span>
+                      <span class="badge rounded-pill text-bg-dark">React</span>
+                      <span class="badge rounded-pill text-bg-dark">Redux</span>
+                      <span class="badge rounded-pill text-bg-dark">Node.js</span>
+                      <span class="badge rounded-pill text-bg-dark">MongoDB</span>
+                      <span class="badge rounded-pill text-bg-dark">Express</span>
+                      <span class="badge rounded-pill text-bg-dark">Python</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 mt-3">
-                <h1 class="text-center text-md-start"><mark>About Me</mark></h1>
-                <p class="lead">I am a Computer Science graduate with a passion for software development, cloud computing, and artificial intelligence. I enjoy building practical projects, learning new technologies, and applying problem-solving skills to create efficient solutions.
-                    Skilled in Python, Java, backend development, APIs, and cloud fundamentals. I am eager to contribute to innovative projects and continuously grow as a software engineer.</p>
-              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <span class="about-label">About me</span>
+              <h2 class="about-title mt-3 mb-3">Who I Am</h2>
+
+              <p class="about-text mb-0">
+                I am a Computer Science graduate passionate about software
+                development, artificial intelligence, and building useful digital
+                solutions. I enjoy creating responsive web applications, learning
+                modern tools, and solving real problems through code. My goal is
+                to grow as a developer while contributing to projects that are
+                practical, creative, and impactful.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container p-3">
-        <h1 class="text-center"><mark>Projects</mark></h1>
-        <div class="row">
+  <!-- PROJECT SECTION -->
+  <section id="projects" class="projects-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="projects-label">Projects</span>
+        <h2 class="projects-title mt-3">
+          Things I've Built
+        </h2>
+      </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
-              <img src="assets/netflix.png" class="card-img-top" alt="Netflix img">
-              <div class="card-body">
-                <h5 class="card-title">Netflix Landing Page </h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://lutendo-movie.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/LutendoLumina/netflix-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+      <div class="row g-4">
+
+        <!-- Project 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/netflix.png" class="card-img-top project-img" alt="Netflix landing page project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Netflix Landing Page</h5>
+              <p class="project-subtitle">Built with HTML and CSS</p>
+              <p class="card-text">
+                A responsive Netflix-inspired landing page focused on layout structure, spacing, and visual hierarchy.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="https://lutendo-movie.netlify.app/" target="_blank" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="https://github.com/LutendoLumina/netflix-clone" target="_blank"
+                  class="btn btn-outline-dark btn-icon" aria-label="View Netflix Landing Page source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
-                <img src="assets/tesla.jpg" class="card-img-top" alt="Tesla img">
-                <div class="card-body">
-                <h5 class="card-title">Tesla Landing Page </h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://lutendo-car.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/LutendoLumina/car-showcase" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+        <!-- Project 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/tesla.jpg" class="card-img-top project-img" alt="Tesla landing page project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Tesla Landing Page</h5>
+              <p class="project-subtitle">Built with HTML and CSS</p>
+              <p class="card-text">
+                A modern landing page inspired by Tesla, designed to practice clean sections, bold visuals, and
+                responsive layout.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="https://lutendo-car.netlify.app/" target="_blank" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="https://github.com/LutendoLumina/car-showcase" target="_blank"
+                  class="btn btn-outline-dark btn-icon" aria-label="View Tesla Landing Page source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-md-4 mt-3">
-            <div class="card">
-                <img src="assets/youtube.png" class="card-img-top" alt="Youtube img">
-                <div class="card-body">
-                <h5 class="card-title">Youtube Clone </h5>
-                <p class="card-text">Built this with HTML & CSS</p>
-                <a href="https://lutendo-tube.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/LutendoLumina/youtube-clone" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+        <!-- Project 3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/youtube.png" class="card-img-top project-img" alt="YouTube clone project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Youtube Clone</h5>
+              <p class="project-subtitle">Built with HTML and CSS</p>
+              <p class="card-text">
+                A YouTube-inspired interface built to strengthen layout design, cards, navigation structure, and content
+                spacing.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="https://lutendo-tube.netlify.app/" target="_blank" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="https://github.com/LutendoLumina/youtube-clone" target="_blank"
+                  class="btn btn-outline-dark btn-icon" aria-label="View YouTube Clone source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/project-placeholder-1.jpg" class="card-img-top project-img"
+              alt="Portfolio website project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Personal Portfolio Website</h5>
+              <p class="project-subtitle">Built with Bootstrap</p>
+              <p class="card-text">
+                A responsive developer portfolio created to present projects, skills, and contact details in a clean
+                professional layout.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="#" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="#" class="btn btn-outline-dark btn-icon"
+                  aria-label="View Personal Portfolio Website source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/project-placeholder-2.jpg" class="card-img-top project-img"
+              alt="Task manager dashboard project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Task Manager Dashboard</h5>
+              <p class="project-subtitle">Built with JavaScript</p>
+              <p class="card-text">
+                A dashboard-style project for organising tasks and improving productivity through a structured and
+                user-friendly interface.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="#" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="#" class="btn btn-outline-dark btn-icon" aria-label="View Task Manager Dashboard source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card project-card h-100 border-0">
+            <img src="assets/project-placeholder-3.jpg" class="card-img-top project-img"
+              alt="Weather app project preview">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title mb-1">Weather App UI</h5>
+              <p class="project-subtitle">Built with HTML, CSS and JavaScript</p>
+              <p class="card-text">
+                A weather-themed application interface designed to practice clean UI cards, responsive layout, and
+                user-friendly structure.
+              </p>
+
+              <div class="mt-auto d-flex align-items-center gap-2">
+                <a href="#" class="btn btn-primary">
+                  View Website
+                </a>
+                <a href="#" class="btn btn-outline-dark btn-icon" aria-label="View Weather App UI source code">
+                  <i class="bi bi-code-slash"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <div class="card contact-card border-0">
+        <div class="card-body p-4 p-md-5 text-center">
+
+          <span class="contact-label">Contact</span>
+          <h2 class="contact-title mt-3">Let’s Connect</h2>
+          <p class="contact-subtitle mb-4">
+            I’d love to connect with fellow developers, recruiters, and anyone interested in working together.
+          </p>
+
+          <div class="social-icons d-flex justify-content-center gap-3 mb-4">
+            <a href="https://www.instagram.com/" target="_blank" class="social-link"
+              aria-label="Visit Instagram profile">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="https://github.com/LutendoLumina" target="_blank" class="social-link"
+              aria-label="Visit GitHub profile">
+              <i class="bi bi-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lutendo-matshidze-8ba4822b7/" target="_blank" class="social-link"
+              aria-label="Visit LinkedIn profile">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+
+          <form class="contact-form text-start mx-auto">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address"
+                required>
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject" required>
+            </div>
+
+            <div class="mb-4">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"
+                required></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary px-4 py-2">
+                Submit
+              </button>
+            </div>
+          </form>
 
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <div class="container p-5">
-        <div class="card p-3">
-          <div class="card-body px-5 text-center">
-            <h1><mark>Let's Connect!</mark></h1>
-            <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking for web development done.</p>
-            <a href="https://www.linkedin.com/in/lutendo-matshidze-8ba4822b7/" target="_blank" class="fs-2"><i class="bi bi-linkedin n-2"></i></a>
-            <a href="https://github.com/LutendoLumina" target="_blank" class="fs-2"><i class="bi bi-github n-2"></i></a>
-            <a href="" target="_blank" class="fs-2"><i class="bi bi-tiktok n-2"></i></a>
-            <a href="" target="_blank" class="fs-2"><i class="bi bi-instagram n-2"></i></a>
+  <!-- FOOTER  -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p class="footer-text">
+        Developed by Lutendo Matshidze using Bootstrap, for portfolio purposes.
+      </p>
+    </div>
+  </footer>
 
-            <form>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Enter Name">
-              </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="subject" placeholder="Enter Subject">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" aria-label="With textarea" placeholder="Enter Messsage"></textarea>
-              </div>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
 </body>
+
 </html>
