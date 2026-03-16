@@ -76,7 +76,7 @@ The layout adjusts based on screen size:
 ## How to Run the Project
 
 1. Clone the repository:
-git clone https://github.com/yourusername/your-repository-name.git
+git clone https://github.com/LutendoLumina/lutendo-portfolio.git
 
 
 2. Open the project folder.
