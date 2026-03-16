@@ -16,7 +16,7 @@
   --input-text: #212529;
   --input-placeholder: #6c757d;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  --hero-overlay: rgba(0, 0, 0, 0.55);
+  --hero-overlay: rgba(0, 0, 0, 0.65);
   --header-bg: rgba(0, 0, 0, 0.55);
 }
 
@@ -78,8 +78,11 @@ body {
 }
 
 .hero-header {
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: var(--header-bg);
 }
 
@@ -382,66 +385,4 @@ body {
   font-size: 0.9rem;
   color: var(--footer-text);
   opacity: 0.9;
-}
-
-/* =========================
-   FORCE BOOTSTRAP TEXT/CARD FIXES
-========================= */
-.card,
-.card-body,
-.card-title,
-.card-text,
-.form-label,
-.form-control,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: inherit;
-}
-
-.card {
-  background-color: var(--card-bg);
-}
-
-.text-muted {
-  color: var(--muted-text) !important;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 767px) {
-  .nav-masthead {
-    gap: 0.8rem;
-    flex-wrap: wrap;
-  }
-
-  .nav-masthead .nav-link {
-    margin-left: 0;
-  }
-
-  .about-title,
-  .projects-title,
-  .contact-title {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .about-card .card-body,
-  .contact-card .card-body {
-    padding: 1.5rem;
-  }
-
-  .project-img {
-    height: 200px;
-  }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
 }
